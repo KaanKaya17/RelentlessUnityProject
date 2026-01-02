@@ -1,0 +1,572 @@
+fileFormatVersion: 2
+guid: 41eab6af6d09f3a458070c3699beb4a1
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7071638438874210598
+    second: LogoWithoutBackground_0
+  - first:
+      213: 6118819409844315457
+    second: LogoWithoutBackground_1
+  - first:
+      213: -2258386632567187728
+    second: LogoWithoutBackground_2
+  - first:
+      213: -5128558238707155155
+    second: LogoWithoutBackground_3
+  - first:
+      213: -4696343509570113430
+    second: LogoWithoutBackground_4
+  - first:
+      213: 1927049365399139448
+    second: LogoWithoutBackground_5
+  - first:
+      213: 453091208430039600
+    second: LogoWithoutBackground_6
+  - first:
+      213: 8955447304906774967
+    second: LogoWithoutBackground_7
+  - first:
+      213: -329351308283230834
+    second: LogoWithoutBackground_8
+  - first:
+      213: -5006428661952455752
+    second: LogoWithoutBackground_9
+  - first:
+      213: -6313287658202555790
+    second: LogoWithoutBackground_10
+  - first:
+      213: -6123276212275076684
+    second: LogoWithoutBackground_11
+  - first:
+      213: 7747322389330006760
+    second: LogoWithoutBackground_12
+  - first:
+      213: -5521734851024387257
+    second: LogoWithoutBackground_13
+  - first:
+      213: 1046850483242847852
+    second: LogoWithoutBackground_14
+  - first:
+      213: 4296603953070497535
+    second: LogoWithoutBackground_15
+  - first:
+      213: -6463660669033433464
+    second: LogoWithoutBackground_16
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: LogoWithoutBackground_0
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 165
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ade97e69e4e7cdd90800000000000000
+      internalID: -7071638438874210598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LogoWithoutBackground_1
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 160
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 145298895d96ae450800000000000000
+      internalID: 6118819409844315457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LogoWithoutBackground_2
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 8
+        width: 70
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f69758b25998a0e0800000000000000
+      internalID: -2258386632567187728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LogoWithoutBackground_3
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 148
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2ff4f34473b3d8b0800000000000000
+      internalID: -5128558238707155155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LogoWithoutBackground_4
+      rect:
+        serializedVersion: 2
+        x: 437
+        y: 154
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a60bcd8d57c33deb0800000000000000
+      internalID: -4696343509570113430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LogoWithoutBackground_5
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 31
+        width: 40
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 874f14910314eba10800000000000000
+      internalID: 1927049365399139448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LogoWithoutBackground_6
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 50
+        width: 34
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0323351bd04b94600800000000000000
+      internalID: 453091208430039600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LogoWithoutBackground_7
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 46
+        width: 42
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b992b530e3284c70800000000000000
+      internalID: 8955447304906774967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LogoWithoutBackground_8
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 35
+        width: 45
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e85c777eab8ed6bf0800000000000000
+      internalID: -329351308283230834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LogoWithoutBackground_9
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 42
+        width: 47
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8bb5dfa38a7958ab0800000000000000
+      internalID: -5006428661952455752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LogoWithoutBackground_10
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 44
+        width: 39
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27a9af7f252b268a0800000000000000
+      internalID: -6313287658202555790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LogoWithoutBackground_11
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 34
+        width: 44
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b1aeb93ab0c50ba0800000000000000
+      internalID: -6123276212275076684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LogoWithoutBackground_12
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 32
+        width: 41
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e212708aa4048b60800000000000000
+      internalID: 7747322389330006760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LogoWithoutBackground_13
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 19
+        width: 59
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7430ccc886bde53b0800000000000000
+      internalID: -5521734851024387257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LogoWithoutBackground_14
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 122
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6ec2a2d7f8278e00800000000000000
+      internalID: 1046850483242847852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LogoWithoutBackground_15
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 68
+        width: 17
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ffe5e4be78a90ab30800000000000000
+      internalID: 4296603953070497535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LogoWithoutBackground_16
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 42
+        width: 12
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88639911ed67c46a0800000000000000
+      internalID: -6463660669033433464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      LogoWithoutBackground_0: -7071638438874210598
+      LogoWithoutBackground_1: 6118819409844315457
+      LogoWithoutBackground_10: -6313287658202555790
+      LogoWithoutBackground_11: -6123276212275076684
+      LogoWithoutBackground_12: 7747322389330006760
+      LogoWithoutBackground_13: -5521734851024387257
+      LogoWithoutBackground_14: 1046850483242847852
+      LogoWithoutBackground_15: 4296603953070497535
+      LogoWithoutBackground_16: -6463660669033433464
+      LogoWithoutBackground_2: -2258386632567187728
+      LogoWithoutBackground_3: -5128558238707155155
+      LogoWithoutBackground_4: -4696343509570113430
+      LogoWithoutBackground_5: 1927049365399139448
+      LogoWithoutBackground_6: 453091208430039600
+      LogoWithoutBackground_7: 8955447304906774967
+      LogoWithoutBackground_8: -329351308283230834
+      LogoWithoutBackground_9: -5006428661952455752
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

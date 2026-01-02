@@ -1,0 +1,12 @@
+fileFormatVersion: 2
+guid: adec2359af769c3498f24937e23be65a
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - healEffectPrefab: {fileID: 5766822554193433929, guid: 522bfc6d831b0494498e1a11e98e6022, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
