@@ -5,41 +5,23 @@ public class Weapon : MonoBehaviour
     [Header("Weapon Components")]
     public GameObject bulletPrefab;
     public Transform firePoint;
-
-    [Header("Visual")]
-    public Transform visual; //  YENÝ
-    private SpriteRenderer sr;
-
     [Header("Weapon Stats")]
     public float fireRate = 0.5f;
     public int damage = 20;
 
-    [Header("Recoil")]
-    public float recoilDistance = 0.16f;
-    public float recoverySpeed = 20f;
-
-    float nextFireTime;
-    Vector3 visualOriginalLocalPos;
+    private float nextFireTime;
+    private SpriteRenderer sr;
 
     void Start()
     {
-        sr = visual.GetComponent<SpriteRenderer>();
-        visualOriginalLocalPos = visual.localPosition;
+        sr = GetComponent<SpriteRenderer>();
     }
 
     void Update()
     {
-        if (!GameManager.GameStarted || PauseManager.isPaused || WeaponController.isPanelOpen)
-            return;
+        if (!GameManager.GameStarted || PauseManager.isPaused || WeaponController.isPanelOpen) return;
 
         RotateTowardsMouse();
-
-        //  recoil recovery (yuvarlak BOZULMAZ)
-        visual.localPosition = Vector3.Lerp(
-            visual.localPosition,
-            visualOriginalLocalPos,
-            Time.deltaTime * recoverySpeed
-        );
 
         if (Input.GetMouseButton(0) && Time.time >= nextFireTime)
         {
@@ -54,35 +36,29 @@ public class Weapon : MonoBehaviour
         mousePos.z = 0f;
 
         Vector2 direction = (mousePos - transform.position).normalized;
+
         float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
 
         transform.rotation = Quaternion.Euler(0, 0, angle);
 
-        sr.flipY = Mathf.Abs(angle) > 90;
+        if (Mathf.Abs(angle) > 90)
+            sr.flipY = true;
+        else
+            sr.flipY = false;
     }
 
     void Shoot()
     {
-        if (!firePoint || !bulletPrefab) return;
+        if (firePoint == null || bulletPrefab == null) return;
 
-        GameObject bullet = Instantiate(
-            bulletPrefab,
-            firePoint.position,
-            transform.rotation
-        );
-
+        GameObject bullet = Instantiate(bulletPrefab, firePoint.position, transform.rotation);
         Bullet bulletScript = bullet.GetComponent<Bullet>();
         if (bulletScript != null)
         {
-            float finalDamage =
-                (damage + PlayerStats.Instance.flatDamageBonus) *
-                PlayerStats.Instance.damageMultiplier;
+            float finalDamage = (this.damage + PlayerStats.Instance.flatDamageBonus) * PlayerStats.Instance.damageMultiplier;
 
             bulletScript.damage = Mathf.RoundToInt(finalDamage);
             bulletScript.SetDirection(transform.right);
         }
-
-        //  GERÇEK BROTATO RECOIL (SADECE GÖRSEL)
-        visual.localPosition = visualOriginalLocalPos + Vector3.left * recoilDistance;
     }
 }

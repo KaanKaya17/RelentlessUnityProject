@@ -35,12 +35,6 @@ public class PlayerHealth : MonoBehaviour
             healthBar.SetHealth(currentHealth);
         }
 
-        HitFlashPlayer flash = GetComponent<HitFlashPlayer>();
-        if (flash != null)
-        {
-            flash.Flash();
-        }
-
         if (CameraShake.Instance != null)
         {
             StartCoroutine(CameraShake.Instance.Shake(0.1f, 0.1f));
@@ -62,11 +56,6 @@ public class PlayerHealth : MonoBehaviour
 
         if (healthBar != null) healthBar.SetHealth(currentHealth);
         healthText.text = currentHealth.ToString();
-
-        HealFlash flash = GetComponent<HealFlash>();
-        if (flash != null) {
-            flash.Flash();
-        }
     }
 
     public void Die()

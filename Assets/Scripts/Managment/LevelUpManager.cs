@@ -8,7 +8,7 @@ public class LevelUpManager : MonoBehaviour
     public GameObject levelUpPanel;
 
     [Header("Open Scene Components")]
-    public GameObject levelUpTitleTextObj;
+    public GameObject levelUpTitleTextObj; 
     public GameObject upgradeContent;
 
     [Header("Statistic UI")]
@@ -58,10 +58,10 @@ public class LevelUpManager : MonoBehaviour
             foreach (char letter in fullText)
             {
                 titleText.text += letter;
-                yield return new WaitForSecondsRealtime(0.07f);
+                yield return new WaitForSecondsRealtime(0.12f);
             }
 
-            yield return new WaitForSecondsRealtime(0.25f);
+            yield return new WaitForSecondsRealtime(0.5f);
         }
 
         upgradeContent.SetActive(true);

@@ -4,7 +4,6 @@ public class EnemyFollow : MonoBehaviour
 {
     [Header("Movemenent")]
     public float moveSpeed = 3f;
-    public float speedGainPerWave = 0.2f; // Her dalga ne kadar hýzlanacak?
     private bool isDead = false;
 
     [Header("Components")]
@@ -26,7 +25,7 @@ public class EnemyFollow : MonoBehaviour
 
     public void ScaleSpeed(int waveIndex)
     {
-        moveSpeed += (Mathf.Max(0, waveIndex - 1) * speedGainPerWave);
+        moveSpeed += (waveIndex * 0.1f);
     }
 
     public void SetDead()

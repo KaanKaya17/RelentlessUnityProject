@@ -22,17 +22,14 @@ public class GameManager : MonoBehaviour
 
     public void StartButtonPressed()
     {
-        WaveManager.Instance.currentWaveText.text = "Wave: " + WaveManager.Instance.currentWave.ToString();
-        WaveManager.Instance.waveTimerText.text = WaveManager.Instance.waveDuration.ToString();
         StartCoroutine(CountdownRoutine());
         UIManager.Instance.ShowHUD(true);
         Player player = FindObjectOfType<Player>();
         if (player != null)
         {
-            WeaponController.isPanelOpen = false;
             player.SetWeaponHolder(true);
         }
-
+        
     }
 
     IEnumerator CountdownRoutine()

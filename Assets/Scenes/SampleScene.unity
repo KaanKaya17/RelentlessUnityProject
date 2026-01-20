@@ -150,7 +150,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerStats
   damageMultiplier: 1
   flatDamageBonus: 0
-  damageScalePerWave: 0.05
 --- !u!4 &19112682
 Transform:
   m_ObjectHideFlags: 0
@@ -1922,32 +1921,6 @@ MonoBehaviour:
   - {fileID: 0}
   weaponHolder: {fileID: 1637951043}
   radius: 1.32
---- !u!114 &246538273
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 246538249}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 24bd4163f0546c2459943e06fe29e7a5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::HitFlashPlayer
-  flashDuration: 0.01
---- !u!114 &246538274
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 246538249}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5b8a6026090b6204f8a858cf65ae0edb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::HealFlash
-  flashDuration: 0.01
 --- !u!1 &277589234
 GameObject:
   m_ObjectHideFlags: 0
@@ -5533,7 +5506,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Wave : 1'
+  m_text: 0
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -8014,7 +7987,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 60
+  m_text: 0
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -12917,7 +12890,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   waveTimerText: {fileID: 1112948443}
   currentWaveText: {fileID: 664046641}
-  waveDuration: 15
+  waveDuration: 60
   currentWave: 1
 --- !u!4 &1757425504
 Transform:
@@ -13282,7 +13255,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   indicatorPrefab: {fileID: 3199729447499054929, guid: e4b558c5b5d145d459cbbc01827e76e7, type: 3}
-  spawnArea: {fileID: 1794632243}
+  spawnArea: {fileID: 0}
   enemyPrefabs:
   - {fileID: 70535387126206269, guid: 244dc21f6b09a104c937ed265f2a0428, type: 3}
   - {fileID: 70535387126206269, guid: 3d9b135001021054c9f2eca2eb0268e6, type: 3}
@@ -16476,12 +16449,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 8844941673397264834, guid: 3d25226b5d4bee742abf7bf4071cb55d, type: 3}
       insertIndex: -1
       addedObject: {fileID: 246538268}
-    - targetCorrespondingSourceObject: {fileID: 8844941673397264834, guid: 3d25226b5d4bee742abf7bf4071cb55d, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 246538273}
-    - targetCorrespondingSourceObject: {fileID: 8844941673397264834, guid: 3d25226b5d4bee742abf7bf4071cb55d, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 246538274}
   m_SourcePrefab: {fileID: 100100000, guid: 3d25226b5d4bee742abf7bf4071cb55d, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:

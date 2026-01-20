@@ -2,27 +2,26 @@ using UnityEngine;
 
 public class EnemyHealth : MonoBehaviour
 {
-    [Header("Base Stats")]
+    [Header("Health Settings")]
     public int maxHealth = 50;
     public int scoreValue = 10;
-    public int experienceValue = 10;
-    public int moneyValue = 10;
 
-    [Header("Scaling (Dalga Baþýna Artýþ)")]
-    public int healthGainPerWave = 15;
-    public int xpGainPerWave = 2;
-
-    private int currentHealth;
     private EnemySpawner mySpawner;
     private Animator anim;
     private bool isDead = false;
+    private int currentHealth;
+
+    [Header("Experience Settings")]
+    public int experienceValue = 10;
 
     [Header("Effects")]
     public GameObject damagePopupPrefab;
+    //public Transform popupSpawnPoint;
 
     void Start()
     {
-        anim = GetComponent<Animator>();
+        currentHealth = maxHealth;
+        anim = GetComponent<Animator>(); 
     }
 
     public void SetSpawner(EnemySpawner spawner)
@@ -32,12 +31,10 @@ public class EnemyHealth : MonoBehaviour
 
     public void ScaleStats(int waveIndex)
     {
-        // 1. dalgada artýþ olmamasý için waveIndex - 1
-        int multiplier = Mathf.Max(0, waveIndex - 1);
-
-        maxHealth += (multiplier * healthGainPerWave);
+        maxHealth += (waveIndex * 15);
         currentHealth = maxHealth;
-        experienceValue += (multiplier * xpGainPerWave);
+
+        experienceValue += (waveIndex * 2);
     }
 
     public void TakeDamage(int damage)
@@ -46,17 +43,23 @@ public class EnemyHealth : MonoBehaviour
 
         currentHealth -= damage;
 
-        // Hit Flash Efekti
-        if (TryGetComponent<HitFlash>(out HitFlash flasher)) flasher.Flash();
+        HitFlash flasher = GetComponent<HitFlash>();
+        if (flasher != null)
+        {
+            flasher.Flash();
+        }
 
-        // Damage Popup
         if (damagePopupPrefab != null)
         {
             GameObject popup = Instantiate(damagePopupPrefab, transform.position + Vector3.up * 1.5f, Quaternion.identity);
             popup.GetComponent<DamagePopup>().Setup(damage);
         }
 
-        if (currentHealth <= 0) Die();
+
+        if (currentHealth <= 0)
+        {
+            Die();
+        }
     }
 
     void Die()
@@ -64,18 +67,30 @@ public class EnemyHealth : MonoBehaviour
         if (isDead) return;
         isDead = true;
 
-        // Ödülleri Daðýt
         if (ScoreManager.Instance != null) ScoreManager.Instance.AddScore(scoreValue);
-        if (MoneyManager.Instance != null) MoneyManager.Instance.addMoney(moneyValue);
-        if (LevelManager.Instance != null) LevelManager.Instance.AddXP(experienceValue);
-
         if (mySpawner != null) mySpawner.OnEnemyDestroyed();
 
-        // Hareketini durdur
-        if (TryGetComponent<EnemyFollow>(out EnemyFollow follow)) follow.SetDead();
+        if (MoneyManager.Instance != null)
+        {
+            MoneyManager.Instance.addMoney(15);
+            Debug.Log("Money: " + MoneyManager.Instance.money);
+        }
 
-        // Çarpýþmayý kapat
-        if (TryGetComponent<Collider2D>(out Collider2D col)) col.enabled = false;
+        if (LevelManager.Instance != null)
+        {
+            LevelManager.Instance.AddXP(experienceValue);
+        }
+
+        EnemyFollow followScript = GetComponent<EnemyFollow>();
+        if (followScript != null)
+        {
+            followScript.SetDead();
+        }
+
+        if (GetComponent<Collider2D>() != null)
+        {
+            GetComponent<Collider2D>().enabled = false;
+        }
 
         if (anim != null) anim.SetTrigger("Die");
 

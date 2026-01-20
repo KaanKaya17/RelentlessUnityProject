@@ -23,16 +23,11 @@ public class WaveManager : MonoBehaviour
 
     public void StartNextWave()
     {
-        if (currentWaveText != null)
-            currentWaveText.text = "Wave: " + currentWave;
-
         currentTimer = waveDuration;
         isWaveActive = true;
 
-        if (PlayerStats.Instance != null)
-        {
-            PlayerStats.Instance.ScalePlayerPower(currentWave);
-        }
+        if (currentWaveText != null)
+            currentWaveText.text = "Wave: " + currentWave;
 
         UpdateSpawnerDifficulty();
         GameManager.GameStarted = true;

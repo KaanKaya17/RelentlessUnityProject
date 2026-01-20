@@ -184,7 +184,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   moveSpeed: 3.9
-  speedGainPerWave: 0.2
 --- !u!114 &5655061936906652673
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -224,12 +223,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3493bc289766b445b2dde1e1637f870, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  maxHealth: 0
+  maxHealth: 50
   scoreValue: 15
   experienceValue: 15
-  moneyValue: 15
-  healthGainPerWave: 6
-  xpGainPerWave: 2
   damagePopupPrefab: {fileID: 5766822554193433929, guid: 2c5d5392f9a5efb45b4ef5008934afe6, type: 3}
 --- !u!95 &4008686949366260515
 Animator:

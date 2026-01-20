@@ -7,11 +7,6 @@ public class WeaponController : MonoBehaviour
 
     public static bool isPanelOpen = false;
 
-    void Start()
-    {
-        isPanelOpen = false;
-    }
-
     void Update()
     {
         if (!GameManager.GameStarted) return;
